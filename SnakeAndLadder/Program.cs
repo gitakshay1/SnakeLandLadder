@@ -9,17 +9,14 @@ namespace Snake_Ladder
             for (int Position = 0; Position <= 100;)
             {
             Here:
+                Random rnd= new Random();
                 Console.WriteLine("Your Position is " + Position);
-                Console.WriteLine("Enter Die Number 1 to 6 :");
-                int Num_on_Die = Convert.ToInt16(Console.ReadLine());
-                if (Num_on_Die <= 6)
-                {
-                    Position = Position + Num_on_Die;
-                }
-                else
-                {
-                    Console.WriteLine("Enter Valid Number");
-                }
+                Console.WriteLine("Enter to rolls the Die");
+                Console.ReadLine();
+                int Num_on_Die = rnd.Next(1,6);
+                Console.WriteLine("Die Number is " + Num_on_Die);
+                Position = Position + Num_on_Die;
+           
                 if (Position >= 101)
                 {
                     Position = Position - Num_on_Die;
