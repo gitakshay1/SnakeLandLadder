@@ -35,7 +35,6 @@ namespace Snake_Ladder
                         }
                         break;
                 }
-       
                 if (Position >= 101)
                 {
                     Position = Position - Num_on_Die;
@@ -47,6 +46,7 @@ namespace Snake_Ladder
                 }
 
             }
+            
             Console.WriteLine("\nYour Position is 100 \n You Won ");
 
         }
