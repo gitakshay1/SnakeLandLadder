@@ -5,16 +5,17 @@ namespace Snake_Ladder
     {
         static void Main(string[] args)
         {
-
+            int Num_Dice_Played=0;
             for (int Position = 0; Position <= 100;)
             {
-            Here:
+                Here:
                 Random Num = new Random();
                 Random Opt = new Random();
                 Console.WriteLine("Your Position is " + Position);
                 Console.WriteLine("\nEnter to rolls the Die");
                 Console.ReadLine();
                 int Num_on_Die = Num.Next(1,6);
+                Num_Dice_Played++;
                 int Option=Opt.Next(0,3);
                 Console.WriteLine("Die Number is " + Num_on_Die);
                 switch (Option)
@@ -47,6 +48,7 @@ namespace Snake_Ladder
 
             }            
             Console.WriteLine("\nYour Position is 100 \n You Won ");
+            Console.WriteLine("Number of Dice Played To win is " + Num_Dice_Played);
         }
     }
 }
