@@ -45,10 +45,8 @@ namespace Snake_Ladder
                     break;
                 }
 
-            }
-            
+            }            
             Console.WriteLine("\nYour Position is 100 \n You Won ");
-
         }
     }
 }
